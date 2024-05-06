@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    /* tirar scrow lateral */
+
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    /* para ficar em linha */
+    justify-content: space-between;
+    /* crirar espaço um do outro */
+    align-items: center;
+}
+
+.title {
+    flex-direction: column;
+    /* para ficar um baixo do outro */
+    line-height: 10px;
+    /* para nao ficar colado */
+
+}
+
+ul {
+    list-style: none;
+    /* retirar a bolinha da ul */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    /* retirar o traço */
+    font-size: 1em;
+}
+
+a:hover {
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+    /* suavizar a transição */
+}
+
+
+.contato {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.contato:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 0.8em;
+
+}
+
+span {
+    color: rgb(132, 14, 201);
+
+}
+
+p {
+    line-height: 1.3em;
+    max-width: 400px;
+
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 150px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+form [type="submit"] {
+    /* para estilizar um elemento dentro do form sem clicar class ou div */
+
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    }
+
+    form [type="submit"]:hover {
+        opacity: .5;
+        transition: 0.3s;
+    }
+
+    input {
+        margin-top: 20px;
+        height: 20px;
+        padding: 15px;
+        border-radius: 20px;
+        border: none;
+        font-size: 15px;
+    }
+
+    input:focus {
+        outline: 2px solid rgb(132, 14, 201);
+    }
